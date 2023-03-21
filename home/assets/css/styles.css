@@ -305,3 +305,13 @@ footer {
     height: 3rem;
 }
 
+.contact-message p {
+    line-height: var(--line-height);
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.contact-message h2 {
+    margin-top: var(--top-margin);
+    text-align: center;
+}
