@@ -305,6 +305,7 @@ footer {
     height: 3rem;
 }
 
+/* CONTACT PAGE SYTLING */
 .contact-message p {
     line-height: var(--line-height);
     text-align: center;
@@ -315,3 +316,5 @@ footer {
     margin-top: var(--top-margin);
     text-align: center;
 }
+
+/* PROJECTS PAGE STYLING */
