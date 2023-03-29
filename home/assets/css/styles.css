@@ -46,6 +46,10 @@ body {
   font-family: var(--font-family);
 }
 
+
+
+/* ============= ALL COMMON PAGE ITEMS ============= */
+/* nav bar */
 nav {
     position: sticky;
     top: 0;
@@ -90,6 +94,17 @@ nav ul li {
     display: none;
 }
 
+/* footer */
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+
+
+/* ============= HOME PAGE ITEMS ============= */
 .hero {
     display: flex;
     align-items: center;
@@ -135,6 +150,20 @@ nav ul li {
     padding: 0.4rem;
 }
 
+/* social accounts */
+.socials {
+    text-align: center;
+}
+  
+.social_icons {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-inline: 2.5%;
+}
+
+
+
+/* ============= SKILLS PAGE ============= */
 .skills {
     max-width: 68.75rem;
     margin: auto;
@@ -163,6 +192,14 @@ nav ul li {
     margin: 10px;
 }
 
+
+
+/* ============= EXPERIENCE PAGE ============= */
+
+
+
+
+/* ============= PROJECT PAGES ============= */
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
@@ -211,6 +248,9 @@ nav ul li {
     margin: 10px;
 }
 
+
+
+/* ============= CONTACT PAGE ============= */
 .contact {
     margin-top: 2rem;
 }
@@ -273,39 +313,6 @@ nav ul li {
     cursor: pointer;
 }
 
-.socials {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 1%;
-    bottom: 50%;
-}
-  
-.socicon {
-    width: 2rem;
-    height: 2rem;
-}
-
-footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-}
-
-.scroll-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 3%;
-    cursor: pointer;
-}
-  
-.up-arrow {
-    width: 3rem;
-    height: 3rem;
-}
-
-/* CONTACT PAGE SYTLING */
 .contact-message p {
     line-height: var(--line-height);
     text-align: center;
@@ -317,4 +324,21 @@ footer {
     text-align: center;
 }
 
-/* PROJECTS PAGE STYLING */
+
+
+
+
+
+
+/* ============= RANDOM STYLING ============= */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+  
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
