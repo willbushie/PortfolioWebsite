@@ -1,3 +1,5 @@
+/* STYLE SHEET FOR ALL PAGES */
+/* global resource imports */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Variables */
@@ -49,7 +51,8 @@ body {
 
 
 /* ============= ALL COMMON PAGE ITEMS ============= */
-/* nav bar */
+/* +++++ NAVBAR SECTION +++++ */
+/* wide screen layout */
 nav {
     position: sticky;
     top: 0;
@@ -94,7 +97,8 @@ nav ul li {
     display: none;
 }
 
-/* footer */
+/* +++++ FOOTER SECTION +++++ */
+/* wide screen layout */
 footer {
     background-color: var(--bg-color);
     padding: 1.25rem;
@@ -105,31 +109,46 @@ footer {
 
 
 /* ============= HOME PAGE ITEMS ============= */
+/* +++++ HERO SECTION +++++ */
+/* wide screen layout (row) */
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
 }
 
 .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    display: block;
+    height: 27.5rem;
+    width: 27.5rem;
 }
-  
+
+/* narrow screen layout (column) */
+@media only screen and (max-width: 61rem) {
+    .hero {
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }        
+}    
+
+/* +++++ BIO SECTION +++++ */
+/* wide screen layout */
 .bio {
+    margin: 5%;
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
-  
+
 .bio h1 {
     margin-bottom: var(--bottom-margin);
 }
-  
+
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
@@ -139,18 +158,32 @@ footer {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
 }
-  
+
 .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
 }
-  
+
 .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
 }
 
-/* social accounts */
+/* narrow screen layout */
+@media only screen and (max-width: 61rem) {
+    .more-about p {
+        line-height: var(--line-height);
+        text-align: justify;
+        max-width: fit-content;
+    }
+
+    .more-about {
+        background-color: var(--bg-color);
+        padding: 2rem;
+    }    
+}
+
+/* +++++ SOCIALS SECTION +++++ */
 .socials {
     text-align: center;
 }
@@ -164,6 +197,8 @@ footer {
 
 
 /* ============= SKILLS PAGE ============= */
+/* +++++  +++++ */
+/* wide screen layout */
 .skills {
     max-width: 68.75rem;
     margin: auto;
@@ -195,11 +230,14 @@ footer {
 
 
 /* ============= EXPERIENCE PAGE ============= */
-
+/* +++++  +++++ */
+/* wide screen layout */
 
 
 
 /* ============= PROJECT PAGES ============= */
+/* +++++  +++++ */
+/* wide screen layout */
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
@@ -251,6 +289,8 @@ footer {
 
 
 /* ============= CONTACT PAGE ============= */
+/* +++++  +++++ */
+/* wide screen layout */
 .contact {
     margin-top: 2rem;
 }
@@ -331,6 +371,8 @@ footer {
 
 
 /* ============= RANDOM STYLING ============= */
+/* +++++  +++++ */
+/* wide screen layout */
 .scroll-up {
     position: fixed;
     right: 0.5%;
