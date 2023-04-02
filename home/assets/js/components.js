@@ -31,7 +31,7 @@ class Projects_Header extends HTMLElement {
           <li><a href="../index.html" class="nav-link">About</a></li>
           <li><a href="../skills.html" class="nav-link">Skills</a></li>
           <li><a href="../experience.html" class="nav-link">Experience</a></li>
-          <li><a href="projects/projects.html" class="nav-link">Projects</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
           <li><a href="../contact.html" class="nav-link">Contact</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
