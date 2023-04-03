@@ -88,6 +88,7 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
+/* burger menu for wide screens */
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -96,6 +97,34 @@ nav ul li {
     cursor: pointer;
     display: none;
 }
+
+/* narrow screen layout */
+@media screen and (max-width: 720px) {
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+}
+
 
 /* +++++ FOOTER SECTION +++++ */
 /* wide screen layout */
