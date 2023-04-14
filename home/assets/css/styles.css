@@ -317,6 +317,39 @@ footer {
 
 
 
+/* ============= INDIVIDUAL PROJECTS PAGE ============= */
+/* +++++  +++++ */
+/* wide screen layout */
+.project-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-bio {
+    display: block;
+}
+
+.project-extras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.code-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.project-img {
+    display: block;
+    height: 21rem;
+    width: 28rem;
+}
+
+
+
 /* ============= CONTACT PAGE ============= */
 /* +++++  +++++ */
 /* wide screen layout */
