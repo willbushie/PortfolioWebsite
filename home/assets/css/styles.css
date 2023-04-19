@@ -362,13 +362,6 @@ footer {
     width: 28rem;
 }
 
-.project-tools {
-    max-width: 68.75rem;
-    margin: auto;
-    text-align: center;
-    margin-top: 2.5rem;
-}
-
 /* narrow screen layout (column) */
 @media only screen and (max-width: 61rem) {
     .project-summary {
@@ -382,6 +375,13 @@ footer {
 
 /* +++++ TECHNOLOGY USED SECTION +++++ */
 /* wide screen layout */
+.project-tools {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
 .tools-header {
     margin-bottom: 1rem;
 }
@@ -434,6 +434,56 @@ footer {
     }    
 }
 
+
+
+/* +++++ ISSUES & RESOLUTIONS SECTION +++++ */
+/* wide screen layout */
+.project-issues {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.project-issues h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.project-issues h3 {
+    margin-top: 0.75rem;
+    padding: 0.4rem;
+}
+
+.project-issues p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+.issue-image-wrapper {
+    /*padding: 1.25rem;*/
+    text-align: center;
+}
+  
+.issue-image {
+    width: 20.5rem;
+    height: 16rem;
+}
+
+/* narrow screen layout */
+@media only screen and (max-width: 61rem) {
+    .project-issues p {
+        line-height: var(--line-height);
+        text-align: justify;
+        max-width: fit-content;
+    }
+
+    .project-issues {
+        background-color: var(--bg-color);
+        padding: 2rem;
+    }    
+}
+
+
+
 /* +++++ WHAT I WOULD DO DIFFERENTLY SECTION +++++ */
 /* wide screen layout */
 .project-changes {
@@ -464,7 +514,6 @@ footer {
         padding: 2rem;
     }    
 }
-
 
 
 
