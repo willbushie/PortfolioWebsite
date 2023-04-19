@@ -318,16 +318,30 @@ footer {
 
 
 /* ============= INDIVIDUAL PROJECTS PAGE ============= */
-/* +++++  +++++ */
+/* +++++ PROJECT SUMMARY SECTION +++++ */
 /* wide screen layout */
 .project-summary {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
 }
 
 .project-bio {
-    display: block;
+    margin: 5%;
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.project-bio h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
 }
 
 .project-extras {
@@ -355,7 +369,19 @@ footer {
     margin-top: 2.5rem;
 }
 
-/* Technology Used */
+/* narrow screen layout (column) */
+@media only screen and (max-width: 61rem) {
+    .project-summary {
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }        
+}    
+
+
+/* +++++ TECHNOLOGY USED SECTION +++++ */
 .tools-header {
     margin-bottom: 1rem;
 }
@@ -377,7 +403,8 @@ footer {
     margin: 10px;
 }
 
-/* What I Learned */
+/* +++++ WHAT I LEARNED SECTION +++++ */
+/* wide screen layout */
 .project-learned {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
@@ -393,6 +420,19 @@ footer {
     padding: 0.4rem;
 }
 
+/* narrow screen layout */
+@media only screen and (max-width: 61rem) {
+    .project-learned p {
+        line-height: var(--line-height);
+        text-align: justify;
+        max-width: fit-content;
+    }
+
+    .project-learned {
+        background-color: var(--bg-color);
+        padding: 2rem;
+    }    
+}
 
 
 /* ============= CONTACT PAGE ============= */
