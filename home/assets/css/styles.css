@@ -380,8 +380,8 @@ footer {
     }        
 }    
 
-
 /* +++++ TECHNOLOGY USED SECTION +++++ */
+/* wide screen layout */
 .tools-header {
     margin-bottom: 1rem;
 }
@@ -433,6 +433,39 @@ footer {
         padding: 2rem;
     }    
 }
+
+/* +++++ WHAT I WOULD DO DIFFERENTLY SECTION +++++ */
+/* wide screen layout */
+.project-changes {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.project-changes h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.project-changes p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* narrow screen layout */
+@media only screen and (max-width: 61rem) {
+    .project-changes p {
+        line-height: var(--line-height);
+        text-align: justify;
+        max-width: fit-content;
+    }
+
+    .project-changes {
+        background-color: var(--bg-color);
+        padding: 2rem;
+    }    
+}
+
+
 
 
 /* ============= CONTACT PAGE ============= */
