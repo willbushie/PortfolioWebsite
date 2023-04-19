@@ -119,7 +119,69 @@
     <section class="project-photos"></section>
 
     <!-- Issues & Resolutions -->
-    <section class="project-issues"></section>
+    <section class="project-issues">
+      <h2>Issues & Resolutions</h2>
+      <div class="project-single-issue">
+        <h3>What kind of algorithm should I use?</h3>
+        <div>
+          <p>
+            I decided that best fit could take far too long with larger inputs, and the
+            opposite of best fit is inefficient. I landed on a first fit algorithm, that
+            would evaluate subsections of the larger bin to place the current smaller bin
+            into. 
+          </p>
+        </div>
+        <h3>How to evaluate the three dimensional space?</h3>
+        <div>
+          <p>
+            Working in three dimensions can be difficult. I settled on a coordinate system
+            which would start at one corner of the object (0, 0, 0) at the bottom left
+            corner for example. Then, using the dimensions of the bins, I would be able to
+            calculate position as well as determining orientation.
+          </p>
+        </div>
+        <h3>How will "used" space be noted?</h3>
+        <div>
+          <p>
+            All boxes are object, and if a smaller box is placed inside of a larger bin, 
+            it's attributes will be updated to denote that. This includes its position
+            inside of the larger bin, and the larger bin will be updated to show that it
+            contains the smaller bin. 
+          </p>
+        </div>
+        <h3>How will the output be visualized?</h3>
+        <div>
+          <p>
+            The project did not require a visual output, so I could have settled with a
+            two dimensional or simple terminal output. However, I thought it would be a 
+            better idea to integrate Matplotlib functionality to see what the filled bins
+            would look like. 
+          </p>
+        </div>
+        <h3>Matplotlib Issue</h3>
+        <div>
+          <p>
+            While integrating Matplotlib, I ran into an issue where a small box placed
+            within a larger bin had open space under it, the visualization would fill
+            in this space. The issue was a simple OR instead of an XOR. Once I used an
+            XOR, the issue was resolved and images were correctly displayed. The image
+            left image below shows the issue. The image on the right is the correct output.
+          </p>
+          <div class="issue-image-wrapper">
+            <img src="../assets/images/projects/binpacking/testing_visuals/testC(box2).png"
+            alt=""
+            loading="lazy"
+            class="issue-image"
+            />
+            <img src="../assets/images/projects/binpacking/testing_visuals/testD(box2).png"
+            alt=""
+            loading="lazy"
+            class="issue-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- What I Would Do Differently -->
     <section class="project-changes">
@@ -145,6 +207,7 @@
       </div>
     </section>
 
+    
 
     <!-- Footer -->
     <main-footer></main-footer>
