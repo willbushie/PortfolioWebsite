@@ -265,30 +265,38 @@ footer {
 
 
 /* ============= PROJECT PAGES ============= */
-/* +++++  +++++ */
+/* +++++ MY PAST PROJECTS SECTION +++++ */
+/* wide screen layout */
+.project-message {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.project-message h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.project-message p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* +++++ PROJECT CARDS SECTION +++++ */
 /* wide screen layout */
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
-    margin-top: 2rem;
 }
-  
-.project-pic {
-    width: 65%;
-    height: 60%;
-}
-  
-.projects-container {
+
+/* card layout */
+.container-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.projects-title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-  
+/* project container & card styling */
 .project-container {
     text-align: center;
     width: 21.875rem;
@@ -298,21 +306,52 @@ footer {
 .project-container p {
     padding: 0.4rem;
 }
-  
-.project-title {
-    margin-bottom: var(--bottom-margin);
-}
-  
-.project-details {
-    margin-bottom: var(--bottom-margin);
-}
-  
+
 .project-card {
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+.project-pic {
+    width: 65%;
+    height: 60%;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: var(--bottom-margin);
+    /*margin-bottom: 1rem;*/
+}
+
+.project-details {
+    margin-bottom: var(--bottom-margin);
+    justify-content: center;
+}
+
+/* narrow screen layout */
+@media only screen and (max-width: 61rem) {
+    /* +++++ MY PAST PROJECTS SECTION +++++ */
+    .project-message {
+        background-color: var(--bg-color);
+        padding: 2rem;
+    }
+
+    .project-message p {
+        line-height: var(--line-height);
+        text-align: justify;
+        max-width: fit-content;
+    }
+
+    /* +++++ PROJECT CARDS SECTION +++++ */
+    .container-wrapper {
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
