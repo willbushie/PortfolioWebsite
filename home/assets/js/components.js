@@ -1,5 +1,35 @@
 // All common page elements/reusable components are held here
 
+
+
+// Main Favicon
+class Main_Favicon extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icons/terminal-icon.png"
+      />
+    `;
+  }
+}
+
+// Projects Favicon
+class Projects_Favicon extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="../assets/icons/terminal-icon.png"
+      />
+    `;
+  }
+}
+
 // Top level Header/Navbar
 /*
 +++++ excess pages place here +++++
@@ -66,6 +96,8 @@ class Main_Footer extends HTMLElement {
 }
 
 // declare comomon page components (to be called within the html)
+customElements.define('main-favicon',Main_Favicon);
+customElements.define('project-favicon',Projects_Favicon);
 customElements.define('main-header',Main_Header);
 customElements.define('projects-header',Projects_Header);
 customElements.define('main-footer',Main_Footer);
