@@ -51,13 +51,16 @@ class Projects_Header extends HTMLElement {
 // Main Footer
 class Main_Footer extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `    
-        <footer>
+        this.innerHTML = `
+          <footer>
             <p class="copy">&copy; Copyright 2023</p>
             <p class="copy">
-                Built with &#128153; by William Bushie
+              Built with &#128153; by William Bushie
             </p>
-        </footer>
+            <p>
+              Send me an <a href="mailto:willbushie@gmail.com">Email</a>
+            </p>
+          </footer>
         `;
     }
 }
