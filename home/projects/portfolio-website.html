@@ -9,17 +9,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/icons/terminal-icon.png"
-    />
+    <project-favicon></project-favicon>
 
     <!-- Animate CSS CDN -->
     <link
@@ -40,7 +30,8 @@
       <!-- Project Image -->
       <img 
         src="../assets/icons/missing-file.png"
-        alt="IT Calculator UI"
+        alt="Portfolio Website Home Page"
+        title="Portfolio Website Home Page"
         loading="lazy"
         class="project-img"
         id="img-website"
@@ -58,11 +49,12 @@
         <!-- Extras -->
         <div class="project-extras" id="extras-website">
           <!-- Time To Complete -->
-          <p class="project-hours" id="hours-website">place holder Hours</p>
+          <p class="project-hours" id="hours-website">50 Hours</p>
           <!-- GitHub Source Code Image & Link -->
           <a href="https://github.com/willbushie/PortfolioWebsite" target="_blank">
             <img src="../assets/icons/github-icon.png"
             alt="Portfolio Website Source Code"
+            title="Source Code"
             loading="lazy"
             class="code-icon"
             /></a>
@@ -79,12 +71,14 @@
           <img
             src="../assets/icons/html-icon.png"
             alt="HTML"
+            title="HTML5"
             loading="lazy"
             class="icon icon-card"
           />
           <img
             src="../assets/icons/css-icon.png"
             alt="CSS"
+            title="CSS"
             loading="lazy"
             class="icon icon-card"
           />
@@ -93,12 +87,23 @@
           <img
             src="../assets/icons/js-icon.png"
             alt="JavaScript"
+            title="JavaScript"
             loading="lazy"
             class="icon icon-card"
           />
           <img
             src="../assets/icons/git-icon.png"
             alt="Git"
+            title="Git"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+        <div class="third-row">
+          <img
+            src="../assets/icons/aws-s3-icon.png"
+            alt="AWS S3"
+            title="AWS S3"
             loading="lazy"
             class="icon icon-card"
           />
@@ -110,15 +115,15 @@
     <section class="project-learned" id="website-learned">
       <h2>What I Learned</h2>
       <div>
-        <p>        
-          Although I have minor experience with HTML, I have never work with it to this 
-          extent. It has shown me that frontend design can be confusing if you don't have 
-          a plan. I really did not have any experience with CSS in the past. Understanding 
-          how CSS connects to HTML and how CSS can be used to design basic dynamic 
-          webpages based on screen sizes was very useful.
-        </p> 
         <p>
-          place holder
+          Although I had worked with HTML in the past, I did not work with it 
+          to this extent. It has shown me that frontend design can be confusing 
+          if you don't have a plan.
+        </p>
+        <p>
+          I really never worked with CSS in the past. Understanding how CSS 
+          connects to the HTML and how CSS can be used to create dynamically 
+          changing webpages based on screen sizes is very useful.
         </p>
       </div>
     </section>
@@ -130,10 +135,31 @@
     <section class="project-issues">
       <h2>Issues & Resolutions</h2>
       <div class="project-single-issue">
-        <h3>place holder</h3>
+        <h3>How do I make the pages dynamic to different screen sizes?</h3>
         <div>
           <p>
-            place holder
+            f I had used a web framework, this would have been much easier. Since 
+            I wanted to focus on basic HTML, CSS, and JS, I needed to use basic CSS 
+            and conditions to change the pages based on different screen sizes. 
+            This seemed to work pretty well, but in some cases the results are 
+            mediocre at best.
+          </p>
+        </div>
+        <h3>Where will I get the domain?</h3>
+        <div>
+          <p>
+            This took some minor research and I eventually ended up on Google 
+            Domains. This seemed like a relatively easy service to interact with 
+            and the domain was very cheap.
+          </p>
+        </div>
+        <h3>Where will I deploy the website?</h3>
+        <div>
+          <p>
+            Although I didn't want to ensure costs with this project, I figured 
+            it would be best to get experience deploying a website to AWS. I 
+            investigated AWS S3 since my website didn't require any server side 
+            processing. All the webpages would be processed by the browser. 
           </p>
         </div>
       </div>
@@ -144,7 +170,24 @@
       <h2>What I Would Do Differntly</h2>
       <div>
         <p>
-          place holder 
+          Some of the styling on the website is not the best. I would have taken 
+          more time to really think about styling and how the pages will change 
+          with different screen sizes. I did try to make sure the majority of the 
+          website was cohesive and dynamic based on different screen sizes, but it 
+          isn't always the greatest.
+        </p>
+        <p>
+          Even though the goal of this project was to focus on HTML, CSS, and 
+          JavaScript without a framework, a JS framework would have greatly helped. 
+          Developing in a single language instead of three would have drastically 
+          reduced the amount of development time for the project.
+        </p>
+        <p>
+          Using a framework would have given me more exposure to JavaScript. The 
+          only times I really needed to utilize JS was with basic website functionality, 
+          such as the Hamburger Menu on narrow screen sizes. The majority of this 
+          project was focused on HTML and CSS, and I wish I would have gotten more 
+          work with JS.
         </p>
       </div>
     </section>
