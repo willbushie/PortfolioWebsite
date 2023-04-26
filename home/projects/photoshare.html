@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <project-favicon></project-favicon>
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>William Bushie | Projects - PhotoShare</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <projects-header></projects-header>
+
+
+    
+    <!-- Project Summary -->
+    <section class="project-summary" id="summary-photoshare">
+      <!-- Project Image -->
+      <img 
+        src="../assets/icons/missing-file.png"
+        alt=""
+        title=""
+        loading="lazy"
+        class="project-img"
+        id="img-photoshare"
+      />
+      <!-- Project Bio -->
+      <div class="project-bio" id="bio-photoshare">
+        <!-- Project Title -->
+        <h2 class="project-title" id="title-photoshare">PhotoShare</h2>
+        <!-- Short Project Description -->
+        <p class="project-description" id="description-photoshare">
+          This project is an android application with a backend API. The goal is to 
+          allow users to join a group and share photos and videos taken while part of 
+          the group automatically. This would be done through peer-to-peer connections 
+          instead of a server handling the files. The server will contain user 
+          information such as email, username, IP, current group, photos to share, and 
+          received photos. You can view my presentation
+          <a href="https://youtu.be/lAemYqfkNxc" target="_blank">here</a> from 0:00 to 28:36.
+        </p>
+        <!-- Extras -->
+        <div class="project-extras" id="extras-photoshare">
+          <!-- Time To Complete -->
+          <p class="project-hours" id="hours-photoshare">200 Hours</p>
+          <!-- GitHub Source Code Image & Link -->
+          <a href="https://github.com/willbushie/CSC491-AndroidApp" target="_blank">
+            <img src="../assets/icons/github-icon.png"
+            alt="PhotoShare Source Code"
+            title="PhotoShare Source Code"
+            loading="lazy"
+            class="code-icon"
+            /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Used -->
+    <section class="project-tools" id="binpacking-tools">
+      <h2 class="tools-header">Tools Used</h2>
+
+      <div class="tools-wrapper">
+        <div class="first-row">
+          <img
+            src="../assets/icons/python-icon.png"
+            alt="Python 3"
+            title="Python 3"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="../assets/icons/java-icon.png"
+            alt="Java"
+            title="Java"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+        <div class="second-row">
+          <img
+            src="../assets/icons/django-icon.png"
+            alt="Django"
+            title="Django"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="../assets/icons/android-studio-icon.png"
+            alt="Android Studio"
+            title="Android Studio"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+        <div class="third row">
+          <img
+            src="../assets/icons/git-icon.png"
+            alt="Git"
+            title="Git"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Learned -->
+    <section class="project-learned" id="photoshare-learned">
+      <h2>What I Learned</h2>
+      <div>
+        <p>
+          Using Django and Python, I created a functioning API that allowed me to 
+          create users, allow users to sign in and track user information. To see this 
+          portion of the project, visit 
+          <a href="https://github.com/willbushie/CSC491-WebServer" target="_blank"
+          >this repository</a> which contains the backend API for the project.
+        </p>
+        <p>
+          Having worked with Android Studio in the past, I was familiar with Java and 
+          basic application structures. This project taught me a lot more about the 
+          kinds of things Android Studio can do and how to design a practical application.
+        </p>
+        <p>
+          User Experience was a huge focus during this project. I wanted to ensure the 
+          user would join groups and forget about the application. I did not want an 
+          intrusive and time consuming processes. Simply create or join a group 
+          (via QR code or URL), and enjoy the time with friends or family. Once done, 
+          leave the group, or pause sharing for a time if needed. Simplicity was important.
+        </p>
+        <p>
+          Networking is very difficult if you do not have previous experience with it. I 
+          ran into a lot of issues with networking while working on this project. I did 
+          not really have an initial plan, and I spent a large portion of this project 
+          researching and troubleshooting these issues. I unfortunately did not get the 
+          application working on a NAT. I have a much greater understanding of networking 
+          after working on this project.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Photos & Descriptions -->
+    <section class="project-photos"></section>
+
+    <!-- Issues & Resolutions -->
+    <section class="project-issues">
+      <h2>Issues & Resolutions</h2>
+      <div class="project-single-issue">
+        <h3>What kind of application should I make?</h3>
+        <div>
+          <p>
+            I used Android Studio since I had an Android Phone to better test the 
+            application. I had also previously worked with Android Studio and Java 
+            making it an easy decision. I wanted to create an IOS application as well, 
+            but due to time and hardware constraints, I was unable to accomplish that.
+          </p>
+        </div>
+        <h3>What backend tools should I use?</h3>
+        <div>
+          <p>
+            I settled on Django and Python for the backend of the application. This 
+            was due to my previous familiarity to Python and Django did not appear to 
+            be much of a learning curve. 
+          </p>
+        </div>
+        <h3>My development environment became an issue multiple times.</h3>
+        <div>
+          <p>
+            This is simply due to the age of my hardware, but I figured it was still 
+            worth noting. I needed to do multiple things to my development environment 
+            to ensure I could continue work.
+          </p>
+        </div>
+        <h3>Networking became the largest issue with the project.</h3>
+        <div>
+          <p>
+            I never had any real experience dealing with networking. I understood the 
+            basics, but due to the nature of the project (peer-to-peer connections), 
+            networking prevented the project from going further. NAT (Network Address 
+            Translation) traversal became my main focus for the last stretch of this 
+            project, but I was unable to resolve the issue. I was able to get two users 
+            to connect to a group while on the same network, but was unable to do the 
+            same while on different networks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Would Do Differently -->
+    <section class="project-changes">
+      <h2>What I Would Do Differntly</h2>
+      <div>
+        <p>
+          I would have gone about the project differently. Networking became a huge issue 
+          in this project. The idea made sense, however implementing such a confusing 
+          networking configuration was out of the scope of this project. NAT (Network 
+          Address Translation) traversal became the rock in the road preventing this 
+          project from completion. Due to simplicity reason, I probably would have just 
+          sent all files to a central server and had the user pull from the server. It 
+          wouldn't have resulted in the problems regarding networking.
+        </p>
+        <p>
+          I would have used a different backend framework. Using Python and Django was 
+          nice since I had previous experience with Python, however I found Django confusing 
+          at times and not very well organized. I would use React instead if I did this 
+          project again. Although I did not have JavaScript experience at the time, I think 
+          it would have given me better real world work experience than Django did.
+        </p>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <main-footer></main-footer>
+
+    <!-- Website scripts -->
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/driver.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>
