@@ -1,6 +1,12 @@
 // All common page elements/reusable components are held here
 
 // Top level Header/Navbar
+/*
++++++ excess pages place here +++++
+<li><a href="skills.html" class="nav-link">Skills</a></li>
+<li><a href="experience.html" class="nav-link">Experience</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+*/
 class Main_Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
@@ -8,10 +14,7 @@ class Main_Header extends HTMLElement {
           <h1><a href="index.html">WILLIAM BUSHIE</a></h1>
           <ul class="navigation">
             <li><a href="index.html" class="nav-link">About</a></li>
-            <li><a href="skills.html" class="nav-link">Skills</a></li>
-            <li><a href="experience.html" class="nav-link">Experience</a></li>
             <li><a href="projects/all.html" class="nav-link">Projects</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
           <button class="burger-menu" id="burger-menu">
             <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -22,6 +25,12 @@ class Main_Header extends HTMLElement {
   }
 
 // Second Level Header/Navbar (for projects pages)
+/*
++++++ skills and experience pages here +++++
+<li><a href="../skills.html" class="nav-link">Skills</a></li>
+<li><a href="../experience.html" class="nav-link">Experience</a></li>
+<li><a href="../contact.html" class="nav-link">Contact</a></li>
+*/
 class Projects_Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -29,10 +38,7 @@ class Projects_Header extends HTMLElement {
         <h1><a href="../index.html">WILLIAM BUSHIE</a></h1>
         <ul class="navigation">
           <li><a href="../index.html" class="nav-link">About</a></li>
-          <li><a href="../skills.html" class="nav-link">Skills</a></li>
-          <li><a href="../experience.html" class="nav-link">Experience</a></li>
           <li><a href="all.html" class="nav-link">Projects</a></li>
-          <li><a href="../contact.html" class="nav-link">Contact</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
           <ion-icon class="bars" name="menu-outline"></ion-icon>
