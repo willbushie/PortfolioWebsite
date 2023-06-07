@@ -1,8 +1,13 @@
-ach_home_page
-bitnami.css
-favicon.ico
-index.php
-applications.html
+# git specific files
+.gitignore
+
+# other local files
+ach
 dashboard
 img
 webalizer
+applications.html
+bitnami.css
+favicon.ico
+index.php
+.DS_Store
